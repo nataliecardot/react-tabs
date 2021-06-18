@@ -38,7 +38,12 @@ function App() {
       <div className="jobs-center">
         <div className="btn-container">
           {jobs.map((item, index) => (
-            <button key={item.id} onClick={() => setValue(index)}>
+            <button
+              key={item.id}
+              onClick={() => setValue(index)}
+              // If index of button matches current state value for value (which sets the job array item for which properties are destructured above), giving it a special class
+              className={`job-btn ${index === value && 'active-btn'}`}
+            >
               {item.company}
             </button>
           ))}
