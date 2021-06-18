@@ -1,6 +1,6 @@
 # react-tabs
 
-Very simple app that displays different data when tabs are clicked, or every item in the list can be displayed. Data is fetched from an API.
+Very simple app that displays different data when tabs are clicked. Data is fetched from an API with async/await syntax.
 
 To view, run `npm i && npm start` in downloaded project.
 
